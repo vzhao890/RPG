@@ -1,7 +1,12 @@
 package Items;
 
 public class Defense extends items {
-    String[] giveDefense = {"Dorans Shield","Knights Vow","Sunfire Cape", "Rags","Ultimate Mystical Shiny Armor", "Adequate armor","Knights armor", "Kevlar Vest", "damaged armor", "shi tarmor"};
+    String[] giveDefense = {
+            "Raggity Woodplank",//What the player is equipped with
+            "Adequate Armor",
+            "Knights Vow",
+            "Sunfire Cape",
+            "Ultimate Mystical Shiny Armor"};
 
     public int giveAttack() {
         return 0;
