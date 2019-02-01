@@ -5,9 +5,11 @@ public interface Person {
     int baseDefense = 0;
     int baseMagic = 0;
     int baseAttack = 0;
+    int baseMana =0;
 
     int getBaseHealth();
     int getBaseDefense();
     int getBaseMagic();
     int getBaseAttack();
+    int getBaseMana();
 }

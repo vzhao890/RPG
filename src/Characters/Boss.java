@@ -11,7 +11,7 @@ public class Boss  implements Person
 
     @Override
     public int getBaseDefense() {
-        return 250;
+        return 150;
     }
 
     @Override
@@ -21,6 +21,9 @@ public class Boss  implements Person
 
     @Override
     public int getBaseAttack() {
-        return 100;
+        return 150;
     }
+
+    @Override
+    public int getBaseMana() { return 100; }
 }

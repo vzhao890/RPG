@@ -2,11 +2,10 @@ package Items;
 
 public class Health extends items {
     String[] giveDefense = {
-            "Band-Aid",
-            "Health Pot",
-            "Mom's Chicken Soup",
-            "Glowing Recovery Liquid",
-            "Rainbow Health Drop"};
+            "Band-Aid",//Drop Rate:1%    health: 5
+            "Health Pot",//Drop Rate:1%   health: 15
+            "Mom's Chicken Soup",//Drop Rate:1%   health: 25
+            "Rainbow Health Drop"};//Drop Rate:1% overall health: +5
 
     public int giveAttack() {
         return 0;
@@ -16,7 +15,5 @@ public class Health extends items {
         return 0;
     }
 
-    public int givemp() {
-        return 0;
-    }
+
 }
