@@ -18,6 +18,11 @@ public class player implements Person {
 
     @Override
     public int getBaseAttack() {
-        return 75;
+        return 0;
+    }
+
+    @Override
+    public int getBaseMana() {
+        return 100;
     }
 }

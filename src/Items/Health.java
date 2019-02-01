@@ -16,7 +16,5 @@ public class Health extends items {
         return 0;
     }
 
-    public int givemp() {
-        return 0;
-    }
+
 }

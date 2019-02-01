@@ -19,6 +19,10 @@ public class Enemy implements Person {
 
     @Override
     public int getBaseAttack() {
-        return 50;
+        return 100;
+    }
+    @Override
+    public int getBaseMana() {
+        return 0;
     }
 }
