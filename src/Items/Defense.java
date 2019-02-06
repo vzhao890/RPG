@@ -10,25 +10,24 @@ public class Defense extends items {
     public int giveAttack() {
         return 0;
     }
-    public int giveDefense(String name) {
-        if(name.equalsIgnoreCase("Raggity Woodplank"))
+    public int giveDefense() {
+        int prob1= (int)(Math.random()*10)+1;
+        System.out.println(prob1);
+        if(prob1!=1 && prob1!=2)
         {
-            return 10;
+            return 85;
         }
-        else if(name.equalsIgnoreCase("Adequate Armor"))
-        {
-            return 30;
-        }
-        else if(name.equalsIgnoreCase("Knights Vow"))
-        {
-            return 30;
-        }
-        else if(name.equalsIgnoreCase("Ultimate Mystical Shiny Armor"))
+        prob1 = (int)(Math.random()*2)+1;
+        if(prob1==1)
         {
             return 100;
-        }else{
-            return 0;
         }
+        prob1 = (int)(Math.random()*100)+1;
+        if(prob1==1)
+        {
+            return 125;
+        }
+        return 0;
     }
 
     public int givemp() {

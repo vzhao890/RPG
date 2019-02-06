@@ -8,24 +8,23 @@ public class Weapons extends items {
             "B.O.R.K"};//Drop Rate:1%          Set Dmg:300
     public int giveAttack(String name)
     {
-        if(name.equalsIgnoreCase("Raggity Stick"))
+        int prob1= (int)(Math.random()*4)+1;
+        System.out.println(prob1);
+        if(prob1==1 || prob1==2 || prob1==3)
         {
-            return 10;
+            return 150;
         }
-        else if(name.equalsIgnoreCase("Knights Blade"))
+        prob1 = (int)(Math.random()*10)+1;
+        if(prob1==1 || prob1==2 || prob1==3)
         {
-            return 30;
+            return 200;
         }
-        else if(name.equalsIgnoreCase("BFF Sword"))
+        prob1 = (int)(Math.random()*100)+1;
+        if(prob1==1)
         {
-            return 30;
+            return 300;
         }
-        else if(name.equalsIgnoreCase("B.O.R.K"))
-        {
-            return 100;
-        }else{
-            return 0;
-        }
+        return 0;
     }
 
     public int giveDefense() {

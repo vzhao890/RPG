@@ -8,24 +8,23 @@ public class Health extends items {
             "Rainbow Health Drop"};//Drop Rate:1% Max health: +50 Health Recovery:50
 
     public int giveHealth(String name) {
-        if(name.equalsIgnoreCase("Band-Aid"))
+        int prob1= (int)(Math.random()*4)+1;
+        System.out.println(prob1);
+        if(prob1==1 || prob1==2 || prob1==3)
         {
             return 10;
         }
-        else if(name.equalsIgnoreCase("Health Pot"))
+        prob1 = (int)(Math.random()*2)+1;
+        if(prob1==1)
+        {
+            return 20;
+        }
+        prob1 = (int)(Math.random()*10)+1;
+        if(prob1==1 || prob1==2 || prob1==3)
         {
             return 30;
         }
-        else if(name.equalsIgnoreCase("Mom's Chicken Soup"))
-        {
-            return 30;
-        }
-        else if(name.equalsIgnoreCase("Rainbow Health Drop"))
-        {
-            return 100;
-        }else{
-            return 0;
-        }
+        return 0;
     }
 
     public int giveDefense() {
