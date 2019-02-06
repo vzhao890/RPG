@@ -30,7 +30,5 @@ public class Defense extends items {
         return 0;
     }
 
-    public int givemp() {
-        return 0;
-    }
+
 }
